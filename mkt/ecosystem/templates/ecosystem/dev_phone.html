@@ -64,7 +64,7 @@
         <h2>{{ _('Docs and tools') }}</h2>
           <p>
             {%- trans devhub_url=url('ecosystem.landing')
-                mdn_url=url('https://marketplace.firefox.com/developers/') %}
+                mdn_url='https://developer.mozilla.org/en-US/' %}
               If you already have a Firefox OS device and want some guidance and direction, you can 
               <a href="{{ devhub_url }}">get started at the Firefox Marketplace Developer Hub</a>. The 
               <a href="{{ mdn_url }}">Mozilla Developer Network</a> also provides a wealth of useful resources such as 
@@ -84,25 +84,25 @@
       <div class="content-wrapper">
         <h2>{{ _('Sharing with the community') }}</h2>
           <p>
-            {%- trans mdn_url=url('https://marketplace.firefox.com/developers/') %}
+            {%- trans mdn_url='https://developer.mozilla.org/en-US/' %}
               When developing for a nascent platform, useful sources of information are always more difficult to find 
               than for more established platforms. To give Firefox OS developers as much help as possible, we'd like 
               you to get involved with the effort! We would like to invite you to add any useful information you have 
-              to the <a href="{{mdn_url}}">Mozilla Developer Network</a>. You can edit pages after creating a Mozilla 
+              to the <a href="{{ mdn_url }}">Mozilla Developer Network</a>. You can edit pages after creating a Mozilla 
               Persona user account and logging in.
             {% endtrans -%}
           </p>
           <p>
-            {%- trans mdn_hackingfxos_url=url('https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Tips_and_tricks')
-                      mdn_fxosapps_url=url('https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Apps/Tips_and_techniques')
-                      mdn_devphone_url=url('https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Developer_phone_guide')
-                      b2g_irc_url=url('irc://irc.mozilla.org/b2g')
-                      b2g_mail_url=url('https://lists.mozilla.org/listinfo/dev-b2g') %}
-              In particular we'd love you to <a href="{{mdn_hackingfxos_url}}">add tips and tricks on hacking Firefox OS
-               itself</a>, <a href="{{mdn_fxosapps_url}}">add tips for developing Firefox OS Apps</a>, and add 
-               information concerning your <a href="{{mdn_devphone_url}}">experiences of getting Firefox OS to work on 
+            {%- trans mdn_hackingfxos_url='https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Tips_and_tricks'
+                      mdn_fxosapps_url='https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Apps/Tips_and_techniques'
+                      mdn_devphone_url='https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Developer_phone_guide'
+                      b2g_irc_url='irc://irc.mozilla.org/b2g'
+                      b2g_mail_url='https://lists.mozilla.org/listinfo/dev-b2g' %}
+              In particular we'd love you to <a href="{{ mdn_hackingfxos_url }}">add tips and tricks on hacking Firefox OS
+               itself</a>, <a href="{{ mdn_fxosapps_url }}">add tips for developing Firefox OS Apps</a>, and add 
+               information concerning your <a href="{{ mdn_devphone_url }}">experiences of getting Firefox OS to work on 
                different devices</a>. In addition, you are always welcome to ask questions and share feedback and 
-               resources on <a href="{{b2g_irc_url}}">IRC</a> and <a href="{{b2g_mail_url}}">e-mail</a>.
+               resources on <a href="{{ b2g_irc_url }}">IRC</a> and <a href="{{ b2g_mail_url }}">e-mail</a>.
             {% endtrans -%}
           </p>
       </div>
